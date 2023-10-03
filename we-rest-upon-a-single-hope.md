@@ -94,5 +94,6 @@ AND "134356987" was indeed the key, and the flag was printed in the console.
 
 ## Tips for the Developer
 
-* For such sensitive functions like comparing a passkey shouldnt be js used without any framework since this is just a very basic "attack". The Developer could also use PHP so the code is not exposed to the attacker
-* 
+* For sensitive operations like comparing a passkey, it's advisable to avoid relying solely on JavaScript without any additional security frameworks. This scenario presents a basic vulnerability. Developers might consider server-side validation using a language like PHP to prevent exposing critical logic to potential attackers.
+
+* Obfuscate your JavaScript code to add an extra layer of security. Without obfuscation, an attacker could easily replace the condition in the if statement with "true," rendering the if statement ineffective. However, it's crucial to note that obfuscated code can still be deobfuscated. While not foolproof, obfuscation can deter casual attackers and make reverse engineering more challenging.
